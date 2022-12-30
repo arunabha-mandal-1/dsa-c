@@ -27,12 +27,17 @@ void selectionSort(int* A, int size){
     }
 }
 
-// Main function
+// main function of selection sort
 int main(){
-    int A1[]={-1, -20};
+    int A1[]={45, 1, 20, -96, 63, 1};
     int n1=sizeof(A1)/sizeof(A1[0]);
+
+    printf("Before sorting > ");
     printArray(A1,n1);
+
     selectionSort(A1,n1);
+
+    printf("After sorting > ");
     printArray(A1,n1);
     return 0;
 }

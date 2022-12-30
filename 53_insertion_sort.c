@@ -22,13 +22,17 @@ void printArray(int* A, int size){
     printf("\n");
 }
 
-// Main function
+// main function of insertion sort
 int main(){
     int A1[]={12, 54, 65, 7, 7, 9};
     int n1=sizeof(A1)/sizeof(A1[0]);
 
+    printf("Before sorting > ");
     printArray(A1,n1);
+
     insertionSort(A1,n1);
+
+    printf("After sorting > ");
     printArray(A1,n1);
     return 0;
 }
